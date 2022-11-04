@@ -76,6 +76,12 @@
     <Compile Include="Presentacion\tabla alumnos.Designer.cs">
       <DependentUpon>tabla alumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\tabla empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\tabla empresa.Designer.cs">
+      <DependentUpon>tabla empresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentacion\especialista.resx">
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\tabla alumnos.resx">
       <DependentUpon>tabla alumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\tabla empresa.resx">
+      <DependentUpon>tabla empresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
