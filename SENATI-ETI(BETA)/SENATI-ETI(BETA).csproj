@@ -70,12 +70,6 @@
     <Compile Include="Presentacion\SENATI-ETI.Designer.cs">
       <DependentUpon>SENATI-ETI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\tabla alumnos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\tabla alumnos.Designer.cs">
-      <DependentUpon>tabla alumnos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Presentacion\tabla empresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,9 +83,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\SENATI-ETI.resx">
       <DependentUpon>SENATI-ETI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\tabla alumnos.resx">
-      <DependentUpon>tabla alumnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\tabla empresa.resx">
       <DependentUpon>tabla empresa.cs</DependentUpon>
