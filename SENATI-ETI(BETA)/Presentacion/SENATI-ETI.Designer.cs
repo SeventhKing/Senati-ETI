@@ -35,7 +35,6 @@
             this.txtpass = new System.Windows.Forms.TextBox();
             this.lblerror = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,22 +96,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.label1.Location = new System.Drawing.Point(569, 9);
+            this.label1.Location = new System.Drawing.Point(513, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(358, 24);
             this.label1.TabIndex = 9;
             this.label1.Text = "ETI | APLICACION SEGUIMIENTO ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.label2.Location = new System.Drawing.Point(771, 265);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(188, 22);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Ingrese a su cuenta";
             // 
             // Login
             // 
@@ -120,7 +108,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1425, 814);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblerror);
             this.Controls.Add(this.txtpass);
@@ -145,7 +132,6 @@
         private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label lblerror;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
     }
 }
 
