@@ -18,9 +18,22 @@ namespace SENATI_ETI_BETA_
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            especialista esp = new especialista();
-            this.Hide();
-            esp.Show();
+            string correo = "especialista@senati.pe";
+            string password = "senati2022";
+
+
+            if (txtcorreo.Text == correo && txtpass.Text == password)
+            {
+                especialista esp = new especialista();
+                this.Hide();
+                esp.Show();
+            }
+            else
+            {
+                lblerror.Visible = true;
+                this.DialogResult = DialogResult.None;
+            }
+            
             
         }
 
