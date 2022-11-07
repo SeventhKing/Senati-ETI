@@ -58,34 +58,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Presentacion\especialista.cs">
+    <Compile Include="especialista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\especialista.Designer.cs">
+    <Compile Include="especialista.Designer.cs">
       <DependentUpon>especialista.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\SENATI-ETI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\SENATI-ETI.Designer.cs">
-      <DependentUpon>SENATI-ETI.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\tabla empresa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\tabla empresa.Designer.cs">
-      <DependentUpon>tabla empresa.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Presentacion\especialista.resx">
-      <DependentUpon>especialista.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\SENATI-ETI.resx">
+    <Compile Include="SENATI-ETI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENATI-ETI.Designer.cs">
       <DependentUpon>SENATI-ETI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\tabla empresa.resx">
+    </Compile>
+    <Compile Include="tabla empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabla empresa.Designer.cs">
       <DependentUpon>tabla empresa.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="especialista.resx">
+      <DependentUpon>especialista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -96,6 +90,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SENATI-ETI.resx">
+      <DependentUpon>SENATI-ETI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabla empresa.resx">
+      <DependentUpon>tabla empresa.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
