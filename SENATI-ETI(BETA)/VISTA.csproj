@@ -78,6 +78,12 @@
     <Compile Include="tabla empresa.Designer.cs">
       <DependentUpon>tabla empresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="textBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="textBox.designer.cs">
+      <DependentUpon>textBox.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="especialista.resx">
       <DependentUpon>especialista.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="tabla empresa.resx">
       <DependentUpon>tabla empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="textBox.resx">
+      <DependentUpon>textBox.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
