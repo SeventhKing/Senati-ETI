@@ -133,7 +133,7 @@
             this.btnIngresar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnIngresar.BackgroundColor = System.Drawing.SystemColors.Highlight;
             this.btnIngresar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnIngresar.BorderRadius = 15;
+            this.btnIngresar.BorderRadius = 8;
             this.btnIngresar.BorderSize = 0;
             this.btnIngresar.FlatAppearance.BorderSize = 0;
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
