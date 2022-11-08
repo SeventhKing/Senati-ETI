@@ -18,13 +18,24 @@ namespace SENATI_ETI_BETA_
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+          
+            
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnIngresar_Click_1(object sender, EventArgs e)
+        {
             string correo = "especialista@senati.pe";
             string password = "senati2022";
 
 
             if (txtCorreo.Texts == correo && txtPassword.Texts == password)
             {
-                especialista esp = new especialista();
+                MENUespecialista esp = new MENUespecialista();
                 this.Hide();
                 esp.Show();
             }
@@ -33,13 +44,7 @@ namespace SENATI_ETI_BETA_
                 lblerror.Visible = true;
                 this.DialogResult = DialogResult.None;
             }
-            
-            
-        }
 
-        private void Login_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

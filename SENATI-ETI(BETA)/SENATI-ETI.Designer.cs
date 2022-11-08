@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnIngresar = new System.Windows.Forms.Button();
             this.lblerror = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCorreo = new SENATI_ETI_BETA_.textBox();
             this.txtPassword = new SENATI_ETI_BETA_.textBox();
+            this.btnIngresar = new SENATI_ETI_BETA_.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,20 +50,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnIngresar
-            // 
-            this.btnIngresar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.btnIngresar.Location = new System.Drawing.Point(743, 430);
-            this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(239, 27);
-            this.btnIngresar.TabIndex = 5;
-            this.btnIngresar.Text = "Ingresar";
-            this.btnIngresar.UseVisualStyleBackColor = false;
-            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // lblerror
             // 
@@ -142,18 +128,38 @@
             this.txtPassword.Texts = "";
             this.txtPassword.UnderlinedStyle = false;
             // 
+            // btnIngresar
+            // 
+            this.btnIngresar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnIngresar.BackgroundColor = System.Drawing.SystemColors.Highlight;
+            this.btnIngresar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnIngresar.BorderRadius = 15;
+            this.btnIngresar.BorderSize = 0;
+            this.btnIngresar.FlatAppearance.BorderSize = 0;
+            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.btnIngresar.ForeColor = System.Drawing.Color.White;
+            this.btnIngresar.Location = new System.Drawing.Point(743, 434);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(239, 27);
+            this.btnIngresar.TabIndex = 13;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.TextColor = System.Drawing.Color.White;
+            this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click_1);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1425, 814);
+            this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblerror);
-            this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.Red;
             this.Name = "Login";
@@ -168,12 +174,12 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Label lblerror;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private textBox txtCorreo;
         private textBox txtPassword;
+        private RJButton btnIngresar;
     }
 }
 

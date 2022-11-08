@@ -58,11 +58,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="especialista.cs">
+    <Compile Include="ButtonETI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MENUespecialista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="especialista.Designer.cs">
-      <DependentUpon>especialista.cs</DependentUpon>
+    <Compile Include="MENUespecialista.Designer.cs">
+      <DependentUpon>MENUespecialista.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,8 +87,8 @@
     <Compile Include="textBox.designer.cs">
       <DependentUpon>textBox.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="especialista.resx">
-      <DependentUpon>especialista.cs</DependentUpon>
+    <EmbeddedResource Include="MENUespecialista.resx">
+      <DependentUpon>MENUespecialista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

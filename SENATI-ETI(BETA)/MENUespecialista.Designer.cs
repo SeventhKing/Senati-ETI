@@ -1,6 +1,6 @@
 ﻿namespace SENATI_ETI_BETA_
 {
-    partial class especialista
+    partial class MENUespecialista
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(especialista));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MENUespecialista));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnConvenio = new System.Windows.Forms.Button();

@@ -11,9 +11,9 @@ using SENATI_ETI_BETA_.Presentacion;
 
 namespace SENATI_ETI_BETA_
 {
-    public partial class especialista : Form
+    public partial class MENUespecialista : Form
     {
-        public especialista()
+        public MENUespecialista()
         {
             InitializeComponent();
             
