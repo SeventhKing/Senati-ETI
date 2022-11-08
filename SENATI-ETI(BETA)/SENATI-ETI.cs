@@ -22,7 +22,7 @@ namespace SENATI_ETI_BETA_
             string password = "senati2022";
 
 
-            if (txtcorreo.Text == correo && txtpass.Text == password)
+            if (txtCorreo.Texts == correo && txtPassword.Texts == password)
             {
                 especialista esp = new especialista();
                 this.Hide();
