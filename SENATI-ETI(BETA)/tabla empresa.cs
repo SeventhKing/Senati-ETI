@@ -15,5 +15,10 @@ namespace SENATI_ETI_BETA_.Presentacion
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

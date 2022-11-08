@@ -41,7 +41,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(457, 249);
@@ -162,6 +162,8 @@
             this.Controls.Add(this.lblerror);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.Red;
+            this.MaximumSize = new System.Drawing.Size(1441, 853);
+            this.MinimumSize = new System.Drawing.Size(1441, 853);
             this.Name = "Login";
             this.Text = "SENATI-ETI";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);

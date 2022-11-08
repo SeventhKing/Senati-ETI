@@ -77,5 +77,7 @@ namespace SENATI_ETI_BETA_
             AbrirFormulario<tabla_empresa>();
 
         }
+
+        
     }
 }
