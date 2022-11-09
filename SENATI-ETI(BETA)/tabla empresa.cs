@@ -11,6 +11,7 @@ namespace SENATI_ETI_BETA_.Presentacion
 {
     public partial class tabla_empresa : Form
     {
+
         public tabla_empresa()
         {
             InitializeComponent();
@@ -19,6 +20,12 @@ namespace SENATI_ETI_BETA_.Presentacion
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rjButton4_Click(object sender, EventArgs e)
+        {
+            CrearEmpresa AgregarEmpresa = new CrearEmpresa();
+            AgregarEmpresa.Show();
         }
     }
 }

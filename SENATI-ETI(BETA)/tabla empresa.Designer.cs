@@ -31,12 +31,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.rjButton4 = new SENATI_ETI_BETA_.RJButton();
+            this.rjButton3 = new SENATI_ETI_BETA_.RJButton();
+            this.rjButton2 = new SENATI_ETI_BETA_.RJButton();
+            this.rjButton1 = new SENATI_ETI_BETA_.RJButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.rjButton1 = new SENATI_ETI_BETA_.RJButton();
-            this.rjButton2 = new SENATI_ETI_BETA_.RJButton();
-            this.rjButton3 = new SENATI_ETI_BETA_.RJButton();
-            this.rjButton4 = new SENATI_ETI_BETA_.RJButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -77,65 +77,26 @@
             this.panel2.Size = new System.Drawing.Size(916, 77);
             this.panel2.TabIndex = 2;
             // 
-            // panel3
+            // rjButton4
             // 
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 47);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(916, 478);
-            this.panel3.TabIndex = 3;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(874, 466);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(66)))), ((int)(((byte)(255)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(66)))), ((int)(((byte)(255)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 8;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(108, 17);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(150, 30);
-            this.rjButton1.TabIndex = 0;
-            this.rjButton1.Text = "Mas Detalles";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // rjButton2
-            // 
-            this.rjButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 8;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(296, 17);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(150, 30);
-            this.rjButton2.TabIndex = 1;
-            this.rjButton2.Text = "Eliminar";
-            this.rjButton2.TextColor = System.Drawing.Color.White;
-            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rjButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(156)))), ((int)(((byte)(5)))));
+            this.rjButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(156)))), ((int)(((byte)(5)))));
+            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton4.BorderRadius = 8;
+            this.rjButton4.BorderSize = 0;
+            this.rjButton4.FlatAppearance.BorderSize = 0;
+            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton4.ForeColor = System.Drawing.Color.White;
+            this.rjButton4.Location = new System.Drawing.Point(660, 17);
+            this.rjButton4.Name = "rjButton4";
+            this.rjButton4.Size = new System.Drawing.Size(150, 30);
+            this.rjButton4.TabIndex = 3;
+            this.rjButton4.Text = "Agregar";
+            this.rjButton4.TextColor = System.Drawing.Color.White;
+            this.rjButton4.UseVisualStyleBackColor = false;
+            this.rjButton4.Click += new System.EventHandler(this.rjButton4_Click);
             // 
             // rjButton3
             // 
@@ -157,25 +118,65 @@
             this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
             // 
-            // rjButton4
+            // rjButton2
             // 
-            this.rjButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(156)))), ((int)(((byte)(5)))));
-            this.rjButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(156)))), ((int)(((byte)(5)))));
-            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton4.BorderRadius = 8;
-            this.rjButton4.BorderSize = 0;
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton4.ForeColor = System.Drawing.Color.White;
-            this.rjButton4.Location = new System.Drawing.Point(660, 17);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(150, 30);
-            this.rjButton4.TabIndex = 3;
-            this.rjButton4.Text = "Agregar";
-            this.rjButton4.TextColor = System.Drawing.Color.White;
-            this.rjButton4.UseVisualStyleBackColor = false;
+            this.rjButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BorderRadius = 8;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.Location = new System.Drawing.Point(296, 17);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(150, 30);
+            this.rjButton2.TabIndex = 1;
+            this.rjButton2.Text = "Eliminar";
+            this.rjButton2.TextColor = System.Drawing.Color.White;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(66)))), ((int)(((byte)(255)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(66)))), ((int)(((byte)(255)))));
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 8;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(108, 17);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(150, 30);
+            this.rjButton1.TabIndex = 0;
+            this.rjButton1.Text = "Mas Detalles";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 47);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(916, 478);
+            this.panel3.TabIndex = 3;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(20, 6);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(874, 466);
+            this.dataGridView1.TabIndex = 0;
             // 
             // tabla_empresa
             // 
