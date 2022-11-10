@@ -61,10 +61,10 @@
     <Compile Include="ButtonETI.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CrearEmpresa.cs">
+    <Compile Include="CRUD-Empresa\CrearEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CrearEmpresa.Designer.cs">
+    <Compile Include="CRUD-Empresa\CrearEmpresa.Designer.cs">
       <DependentUpon>CrearEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="MENUespecialista.cs">
@@ -75,16 +75,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SENATI-ETI.cs">
+    <Compile Include="SENATI-ETI LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SENATI-ETI.Designer.cs">
-      <DependentUpon>SENATI-ETI.cs</DependentUpon>
+    <Compile Include="SENATI-ETI LOGIN.Designer.cs">
+      <DependentUpon>SENATI-ETI LOGIN.cs</DependentUpon>
     </Compile>
-    <Compile Include="tabla empresa.cs">
+    <Compile Include="Tablas\tabla alumno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tabla empresa.Designer.cs">
+    <Compile Include="Tablas\tabla alumno.Designer.cs">
+      <DependentUpon>tabla alumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\tabla convenio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\tabla convenio.Designer.cs">
+      <DependentUpon>tabla convenio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\tabla empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\tabla empresa.Designer.cs">
       <DependentUpon>tabla empresa.cs</DependentUpon>
     </Compile>
     <Compile Include="textBox.cs">
@@ -93,7 +105,7 @@
     <Compile Include="textBox.designer.cs">
       <DependentUpon>textBox.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CrearEmpresa.resx">
+    <EmbeddedResource Include="CRUD-Empresa\CrearEmpresa.resx">
       <DependentUpon>CrearEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MENUespecialista.resx">
@@ -109,10 +121,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SENATI-ETI.resx">
-      <DependentUpon>SENATI-ETI.cs</DependentUpon>
+    <EmbeddedResource Include="SENATI-ETI LOGIN.resx">
+      <DependentUpon>SENATI-ETI LOGIN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tabla empresa.resx">
+    <EmbeddedResource Include="Tablas\tabla alumno.resx">
+      <DependentUpon>tabla alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\tabla convenio.resx">
+      <DependentUpon>tabla convenio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\tabla empresa.resx">
       <DependentUpon>tabla empresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="textBox.resx">
@@ -147,5 +165,6 @@
   <ItemGroup>
     <None Include="Resources\logout %281%29- 30px.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

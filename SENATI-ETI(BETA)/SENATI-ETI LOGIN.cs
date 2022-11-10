@@ -32,8 +32,11 @@ namespace SENATI_ETI_BETA_
             string correo = "especialista@senati.pe";
             string password = "senati2022";
 
+            MENUespecialista esp = new MENUespecialista();
+            this.Hide();
+            esp.Show();
 
-            if (txtCorreo.Texts == correo && txtPassword.Texts == password)
+            /*if (txtCorreo.Texts == correo && txtPassword.Texts == password)
             {
                 MENUespecialista esp = new MENUespecialista();
                 this.Hide();
@@ -43,7 +46,7 @@ namespace SENATI_ETI_BETA_
             {
                 lblerror.Visible = true;
                 this.DialogResult = DialogResult.None;
-            }
+            }*/
 
         }
     }

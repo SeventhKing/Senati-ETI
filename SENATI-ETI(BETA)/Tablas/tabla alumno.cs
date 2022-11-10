@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace SENATI_ETI_BETA_
+namespace SENATI_ETI_BETA_.Tablas
 {
-    public partial class TheTextBox : UserControl
+    public partial class tabla_alumno : Form
     {
-        public TheTextBox()
+        public tabla_alumno()
         {
             InitializeComponent();
         }

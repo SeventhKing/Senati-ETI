@@ -8,6 +8,7 @@ using System.Text;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using SENATI_ETI_BETA_.Presentacion;
+using SENATI_ETI_BETA_.Tablas;
 
 namespace SENATI_ETI_BETA_
 {
@@ -40,42 +41,35 @@ namespace SENATI_ETI_BETA_
         {
 
         }
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
-        {
-            Form formulario;
-            formulario = panelMuestra.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
-                                                                                     //si el formulario/instancia no existe
-            if (formulario == null)
-            {
-                formulario = new MiForm();
-                formulario.TopLevel = false;
-                formulario.FormBorderStyle = FormBorderStyle.None;
-                formulario.Dock = DockStyle.Fill;
-                panelMuestra.Controls.Add(formulario);
-                panelMuestra.Tag = formulario;
-                formulario.Show();
-                formulario.BringToFront();
-            }
-            //si el formulario/instancia existe
-            else
-            {
-                formulario.BringToFront();
-            }
-        }
 
-        private void panelMuestra_Paint(object sender, PaintEventArgs e)
+        private Form activeForm = null;
+        private void openChildFormInPanel(Form childForm)
         {
-
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelMuestra.Controls.Add(childForm);
+            panelMuestra.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private void btnAlumno_Click(object sender, EventArgs e)
         {
+            openChildFormInPanel(new tabla_alumno());
         }
 
         private void btnEmpresa_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<tabla_empresa>();
+            openChildFormInPanel(new tabla_empresa());
+        }
 
+        private void btnConevio_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new tabla_convenio());
         }
 
         

@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MENUespecialista));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.rjButton3 = new SENATI_ETI_BETA_.RJButton();
-            this.rjButton2 = new SENATI_ETI_BETA_.RJButton();
+            this.btnConvenio = new SENATI_ETI_BETA_.RJButton();
             this.btnEmpresa = new SENATI_ETI_BETA_.RJButton();
-            this.btnIngresar = new SENATI_ETI_BETA_.RJButton();
+            this.btnAlumno = new SENATI_ETI_BETA_.RJButton();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMuestra = new System.Windows.Forms.Panel();
@@ -45,9 +45,9 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.panelMenu.Controls.Add(this.rjButton3);
-            this.panelMenu.Controls.Add(this.rjButton2);
+            this.panelMenu.Controls.Add(this.btnConvenio);
             this.panelMenu.Controls.Add(this.btnEmpresa);
-            this.panelMenu.Controls.Add(this.btnIngresar);
+            this.panelMenu.Controls.Add(this.btnAlumno);
             this.panelMenu.Controls.Add(this.btnLogOut);
             this.panelMenu.Controls.Add(this.pictureBox1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -65,7 +65,7 @@
             this.rjButton3.BorderSize = 0;
             this.rjButton3.FlatAppearance.BorderSize = 0;
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.rjButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.rjButton3.ForeColor = System.Drawing.Color.White;
             this.rjButton3.Location = new System.Drawing.Point(26, 360);
             this.rjButton3.Name = "rjButton3";
@@ -75,24 +75,25 @@
             this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
             // 
-            // rjButton2
+            // btnConvenio
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
-            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
-            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 8;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(26, 304);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(239, 27);
-            this.rjButton2.TabIndex = 16;
-            this.rjButton2.Text = "Convenios";
-            this.rjButton2.TextColor = System.Drawing.Color.White;
-            this.rjButton2.UseVisualStyleBackColor = false;
+            this.btnConvenio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
+            this.btnConvenio.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
+            this.btnConvenio.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnConvenio.BorderRadius = 8;
+            this.btnConvenio.BorderSize = 0;
+            this.btnConvenio.FlatAppearance.BorderSize = 0;
+            this.btnConvenio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConvenio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btnConvenio.ForeColor = System.Drawing.Color.White;
+            this.btnConvenio.Location = new System.Drawing.Point(26, 304);
+            this.btnConvenio.Name = "btnConvenio";
+            this.btnConvenio.Size = new System.Drawing.Size(239, 27);
+            this.btnConvenio.TabIndex = 16;
+            this.btnConvenio.Text = "Convenios";
+            this.btnConvenio.TextColor = System.Drawing.Color.White;
+            this.btnConvenio.UseVisualStyleBackColor = false;
+            this.btnConvenio.Click += new System.EventHandler(this.btnConevio_Click);
             // 
             // btnEmpresa
             // 
@@ -103,7 +104,7 @@
             this.btnEmpresa.BorderSize = 0;
             this.btnEmpresa.FlatAppearance.BorderSize = 0;
             this.btnEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmpresa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.btnEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.btnEmpresa.ForeColor = System.Drawing.Color.White;
             this.btnEmpresa.Location = new System.Drawing.Point(26, 254);
             this.btnEmpresa.Name = "btnEmpresa";
@@ -114,31 +115,32 @@
             this.btnEmpresa.UseVisualStyleBackColor = false;
             this.btnEmpresa.Click += new System.EventHandler(this.btnEmpresa_Click);
             // 
-            // btnIngresar
+            // btnAlumno
             // 
-            this.btnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
-            this.btnIngresar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
-            this.btnIngresar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnIngresar.BorderRadius = 8;
-            this.btnIngresar.BorderSize = 0;
-            this.btnIngresar.FlatAppearance.BorderSize = 0;
-            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.btnIngresar.ForeColor = System.Drawing.Color.White;
-            this.btnIngresar.Location = new System.Drawing.Point(26, 207);
-            this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(239, 27);
-            this.btnIngresar.TabIndex = 14;
-            this.btnIngresar.Text = "Alumnos";
-            this.btnIngresar.TextColor = System.Drawing.Color.White;
-            this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
+            this.btnAlumno.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
+            this.btnAlumno.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAlumno.BorderRadius = 8;
+            this.btnAlumno.BorderSize = 0;
+            this.btnAlumno.FlatAppearance.BorderSize = 0;
+            this.btnAlumno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btnAlumno.ForeColor = System.Drawing.Color.White;
+            this.btnAlumno.Location = new System.Drawing.Point(26, 207);
+            this.btnAlumno.Name = "btnAlumno";
+            this.btnAlumno.Size = new System.Drawing.Size(239, 27);
+            this.btnAlumno.TabIndex = 14;
+            this.btnAlumno.Text = "Alumnos";
+            this.btnAlumno.TextColor = System.Drawing.Color.White;
+            this.btnAlumno.UseVisualStyleBackColor = false;
+            this.btnAlumno.Click += new System.EventHandler(this.btnAlumno_Click);
             // 
             // btnLogOut
             // 
             this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.btnLogOut.FlatAppearance.BorderSize = 0;
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogOut.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogOut.Image = global::SENATI_ETI_BETA_.Properties.Resources.logout__1___30px;
             this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -182,7 +184,6 @@
             this.Name = "MENUespecialista";
             this.Text = "Menu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.especialista_FormClosing);
-            this.Load += new System.EventHandler(this.especialista_Load);
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -195,8 +196,8 @@
         private System.Windows.Forms.Panel panelMuestra;
         private System.Windows.Forms.PictureBox pictureBox1;
         private RJButton rjButton3;
-        private RJButton rjButton2;
+        private RJButton btnConvenio;
         private RJButton btnEmpresa;
-        private RJButton btnIngresar;
+        private RJButton btnAlumno;
     }
 }
