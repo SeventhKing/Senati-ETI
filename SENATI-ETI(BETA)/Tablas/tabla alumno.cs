@@ -15,5 +15,10 @@ namespace SENATI_ETI_BETA_.Tablas
         {
             InitializeComponent();
         }
+
+        private void tabla_alumno_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
