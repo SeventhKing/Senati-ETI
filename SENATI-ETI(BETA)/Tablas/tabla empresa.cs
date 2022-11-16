@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CONTROLLER;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,15 +18,32 @@ namespace SENATI_ETI_BETA_.Presentacion
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void rjButton4_Click(object sender, EventArgs e)
         {
             CrearEmpresa AgregarEmpresa = new CrearEmpresa();
             AgregarEmpresa.Show();
+        }
+
+        
+
+        private void tabla_empresa_Load(object sender, EventArgs e)
+        {
+            llenarTabla();
+        }
+
+        private void llenarTabla()
+        {
+            try
+            {
+                DataTable alumno;
+                alumno = ControllerEmpresa.listarEmpresa();
+                dtEmpresa.DataSource = alumno;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

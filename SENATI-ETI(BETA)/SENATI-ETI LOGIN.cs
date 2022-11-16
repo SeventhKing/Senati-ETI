@@ -35,6 +35,7 @@ namespace SENATI_ETI_BETA_
             //string correo = "especialista@senati.pe";
             //string password = "senati2022";
 
+
             conex();
             MENUespecialista esp = new MENUespecialista();
             this.Hide();

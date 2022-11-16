@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CONTROLLER;
+using Microsoft.EntityFrameworkCore.Query.Internal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,7 +20,22 @@ namespace SENATI_ETI_BETA_.Tablas
 
         private void tabla_alumno_Load(object sender, EventArgs e)
         {
+            llenarTabla();
+        }
 
+        private void llenarTabla()
+        {
+            try
+            {
+                DataTable alumno;
+                alumno = ControllerAlumno.listarAlumno();
+                dtAlumno.DataSource = alumno;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

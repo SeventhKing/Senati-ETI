@@ -29,7 +29,6 @@ namespace MODEL
                 conex = new MySqlConnection(cadenaConexion);
                 conex.ConnectionString = cadenaConexion;
                 conex.Open();
-                MessageBox.Show("Se conecto correctamente a la base de datos");
                 return conex;
             }
             catch (MySqlException e)

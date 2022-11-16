@@ -31,16 +31,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dtEmpresa = new System.Windows.Forms.DataGridView();
             this.rjButton4 = new SENATI_ETI_BETA_.RJButton();
             this.rjButton3 = new SENATI_ETI_BETA_.RJButton();
             this.rjButton2 = new SENATI_ETI_BETA_.RJButton();
             this.rjButton1 = new SENATI_ETI_BETA_.RJButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtEmpresa)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,14 +56,13 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
             this.label1.Location = new System.Drawing.Point(286, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(354, 32);
+            this.label1.Size = new System.Drawing.Size(352, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "PADRON EMPRESAS | ETI";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -77,6 +76,26 @@
             this.panel2.Size = new System.Drawing.Size(916, 77);
             this.panel2.TabIndex = 2;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dtEmpresa);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 47);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(916, 478);
+            this.panel3.TabIndex = 3;
+            // 
+            // dtEmpresa
+            // 
+            this.dtEmpresa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtEmpresa.Location = new System.Drawing.Point(20, 6);
+            this.dtEmpresa.Name = "dtEmpresa";
+            this.dtEmpresa.Size = new System.Drawing.Size(874, 466);
+            this.dtEmpresa.TabIndex = 0;
+            // 
             // rjButton4
             // 
             this.rjButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -87,7 +106,7 @@
             this.rjButton4.BorderSize = 0;
             this.rjButton4.FlatAppearance.BorderSize = 0;
             this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton4.ForeColor = System.Drawing.Color.White;
             this.rjButton4.Location = new System.Drawing.Point(660, 17);
             this.rjButton4.Name = "rjButton4";
@@ -108,7 +127,7 @@
             this.rjButton3.BorderSize = 0;
             this.rjButton3.FlatAppearance.BorderSize = 0;
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton3.ForeColor = System.Drawing.Color.White;
             this.rjButton3.Location = new System.Drawing.Point(477, 17);
             this.rjButton3.Name = "rjButton3";
@@ -128,7 +147,7 @@
             this.rjButton2.BorderSize = 0;
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
             this.rjButton2.Location = new System.Drawing.Point(296, 17);
             this.rjButton2.Name = "rjButton2";
@@ -148,7 +167,7 @@
             this.rjButton1.BorderSize = 0;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
             this.rjButton1.Location = new System.Drawing.Point(108, 17);
             this.rjButton1.Name = "rjButton1";
@@ -157,26 +176,6 @@
             this.rjButton1.Text = "Mas Detalles";
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 47);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(916, 478);
-            this.panel3.TabIndex = 3;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(874, 466);
-            this.dataGridView1.TabIndex = 0;
             // 
             // tabla_empresa
             // 
@@ -189,11 +188,12 @@
             this.MinimumSize = new System.Drawing.Size(932, 641);
             this.Name = "tabla_empresa";
             this.Text = "tabla_empresa";
+            this.Load += new System.EventHandler(this.tabla_empresa_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtEmpresa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -204,7 +204,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtEmpresa;
         private RJButton rjButton4;
         private RJButton rjButton3;
         private RJButton rjButton2;

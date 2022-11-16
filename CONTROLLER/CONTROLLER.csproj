@@ -154,7 +154,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControllerAlumno.cs" />
     <Compile Include="ControllerConection.cs" />
+    <Compile Include="ControllerEmpresa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
