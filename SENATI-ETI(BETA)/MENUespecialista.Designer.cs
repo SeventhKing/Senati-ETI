@@ -34,8 +34,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMuestra = new System.Windows.Forms.Panel();
             this.plimportar = new System.Windows.Forms.Panel();
-            this.rjButton2 = new SENATI_ETI_BETA_.RJButton();
-            this.rjButton1 = new SENATI_ETI_BETA_.RJButton();
+            this.importEmpresa = new SENATI_ETI_BETA_.RJButton();
+            this.importAlumno = new SENATI_ETI_BETA_.RJButton();
             this.btnImportar = new SENATI_ETI_BETA_.RJButton();
             this.btnModalidad = new SENATI_ETI_BETA_.RJButton();
             this.btnConvenio = new SENATI_ETI_BETA_.RJButton();
@@ -102,50 +102,52 @@
             // 
             // plimportar
             // 
-            this.plimportar.Controls.Add(this.rjButton2);
-            this.plimportar.Controls.Add(this.rjButton1);
+            this.plimportar.BackColor = System.Drawing.Color.DarkGray;
+            this.plimportar.Controls.Add(this.importEmpresa);
+            this.plimportar.Controls.Add(this.importAlumno);
             this.plimportar.Location = new System.Drawing.Point(0, 372);
             this.plimportar.Name = "plimportar";
-            this.plimportar.Size = new System.Drawing.Size(288, 111);
+            this.plimportar.Size = new System.Drawing.Size(288, 69);
             this.plimportar.TabIndex = 18;
             // 
-            // rjButton2
+            // importEmpresa
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
-            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
-            this.rjButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
-            this.rjButton2.BorderRadius = 8;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(26, 61);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(239, 27);
-            this.rjButton2.TabIndex = 19;
-            this.rjButton2.Text = "Empresa";
-            this.rjButton2.TextColor = System.Drawing.Color.White;
-            this.rjButton2.UseVisualStyleBackColor = false;
+            this.importEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
+            this.importEmpresa.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
+            this.importEmpresa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
+            this.importEmpresa.BorderRadius = 8;
+            this.importEmpresa.BorderSize = 0;
+            this.importEmpresa.FlatAppearance.BorderSize = 0;
+            this.importEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.importEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.importEmpresa.ForeColor = System.Drawing.Color.White;
+            this.importEmpresa.Location = new System.Drawing.Point(26, 36);
+            this.importEmpresa.Name = "importEmpresa";
+            this.importEmpresa.Size = new System.Drawing.Size(239, 27);
+            this.importEmpresa.TabIndex = 19;
+            this.importEmpresa.Text = "Empresa";
+            this.importEmpresa.TextColor = System.Drawing.Color.White;
+            this.importEmpresa.UseVisualStyleBackColor = false;
             // 
-            // rjButton1
+            // importAlumno
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
-            this.rjButton1.BorderRadius = 8;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(26, 13);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(239, 27);
-            this.rjButton1.TabIndex = 18;
-            this.rjButton1.Text = "Alumno";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.importAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
+            this.importAlumno.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
+            this.importAlumno.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(59)))), ((int)(((byte)(112)))));
+            this.importAlumno.BorderRadius = 8;
+            this.importAlumno.BorderSize = 0;
+            this.importAlumno.FlatAppearance.BorderSize = 0;
+            this.importAlumno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.importAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.importAlumno.ForeColor = System.Drawing.Color.White;
+            this.importAlumno.Location = new System.Drawing.Point(26, 3);
+            this.importAlumno.Name = "importAlumno";
+            this.importAlumno.Size = new System.Drawing.Size(239, 27);
+            this.importAlumno.TabIndex = 18;
+            this.importAlumno.Text = "Alumno";
+            this.importAlumno.TextColor = System.Drawing.Color.White;
+            this.importAlumno.UseVisualStyleBackColor = false;
+            this.importAlumno.Click += new System.EventHandler(this.importAlumno_Click);
             // 
             // btnImportar
             // 
@@ -276,7 +278,7 @@
         private RJButton btnAlumno;
         private RJButton btnImportar;
         private System.Windows.Forms.Panel plimportar;
-        private RJButton rjButton2;
-        private RJButton rjButton1;
+        private RJButton importEmpresa;
+        private RJButton importAlumno;
     }
 }

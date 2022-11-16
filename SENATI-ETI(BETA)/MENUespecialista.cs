@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using SENATI_ETI_BETA_.Presentacion;
 using SENATI_ETI_BETA_.Tablas;
+using System.IO;
 
 namespace SENATI_ETI_BETA_
 {
@@ -92,6 +93,12 @@ namespace SENATI_ETI_BETA_
         {
             showpl(plimportar);
             
+        }
+
+        private void importAlumno_Click(object sender, EventArgs e)
+        {
+            ImportarAlumno imp = new ImportarAlumno();
+            imp.Show();
         }
     }
 }
