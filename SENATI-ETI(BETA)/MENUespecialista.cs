@@ -17,7 +17,7 @@ namespace SENATI_ETI_BETA_
         public MENUespecialista()
         {
             InitializeComponent();
-            
+            hideSubMenu();
         }
 
         private void especialista_FormClosing(object sender, FormClosingEventArgs e)
@@ -72,6 +72,26 @@ namespace SENATI_ETI_BETA_
             openChildFormInPanel(new tabla_convenio());
         }
 
-        
+        private void hideSubMenu()
+        {
+            plimportar.Visible = false;
+        }
+
+        private void showpl(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
+        }
+
+        private void btnImportar_Click(object sender, EventArgs e)
+        {
+            showpl(plimportar);
+            
+        }
     }
 }
