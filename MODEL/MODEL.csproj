@@ -154,6 +154,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Excel.cs" />
     <Compile Include="ModelAlumno.cs" />
     <Compile Include="ModelConect.cs" />
     <Compile Include="ModelEmpresa.cs" />

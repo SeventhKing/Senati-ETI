@@ -157,6 +157,7 @@
     <Compile Include="ControllerAlumno.cs" />
     <Compile Include="ControllerConection.cs" />
     <Compile Include="ControllerEmpresa.cs" />
+    <Compile Include="ControllerImportAlumno.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

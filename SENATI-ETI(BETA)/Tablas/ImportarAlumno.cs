@@ -1,4 +1,5 @@
-﻿using ExcelDataReader;
+﻿using CONTROLLER;
+using ExcelDataReader;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace SENATI_ETI_BETA_.Tablas
     public partial class ImportarAlumno : Form
     {
         private DataSet dtsTablas = new DataSet();
+        private bool resultado;
+
         public ImportarAlumno()
         {
             InitializeComponent();
@@ -24,7 +27,7 @@ namespace SENATI_ETI_BETA_.Tablas
         {
             //configuracion de ventana para seleccionar un archivo
             OpenFileDialog oOpenFileDialog = new OpenFileDialog();
-            oOpenFileDialog.Filter = "Excel Worbook|*.xlsx";
+            //oOpenFileDialog.Filter = "Excel Worbook|*.xlsx";
 
             if (oOpenFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -70,18 +73,18 @@ namespace SENATI_ETI_BETA_.Tablas
 
         private void btnRegistrarData_Click(object sender, EventArgs e)
         {
-            //DataTable data = (DataTable)(dgvDatos.DataSource);
+            DataTable data = (DataTable)(dgvDatos.DataSource);
 
-            //bool resultado = new Operaciones().CargarData(data);
+            resultado =ControllerEmpresa.insertarempresa(data);
+            if (resultado)
+            {
+                MessageBox.Show("Se registro la data");
+            }
+            else
+            {
+                MessageBox.Show("Hubo un problema al registrar");
+            }
 
-            //if (resultado)
-            //{
-            //    MessageBox.Show("Se registro la data");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Hubo un problema al registrar");
-            //}
         }
     }
 }

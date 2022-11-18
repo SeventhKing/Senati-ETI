@@ -13,5 +13,10 @@ namespace CONTROLLER
         {
             return MODEL.ModelEmpresa.getEmpresa();
         }
+
+        public static bool insertarempresa(DataTable dta)
+        {
+            return MODEL.Excel.CargarDataEmpresa(dta);
+        }
     }
 }
