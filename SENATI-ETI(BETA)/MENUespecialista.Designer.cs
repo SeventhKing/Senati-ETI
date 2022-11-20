@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MENUespecialista));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.plimportar = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMuestra = new System.Windows.Forms.Panel();
-            this.plimportar = new System.Windows.Forms.Panel();
             this.importEmpresa = new SENATI_ETI_BETA_.RJButton();
             this.importAlumno = new SENATI_ETI_BETA_.RJButton();
             this.btnImportar = new SENATI_ETI_BETA_.RJButton();
@@ -41,27 +41,39 @@
             this.btnConvenio = new SENATI_ETI_BETA_.RJButton();
             this.btnEmpresa = new SENATI_ETI_BETA_.RJButton();
             this.btnAlumno = new SENATI_ETI_BETA_.RJButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.plimportar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Controls.Add(this.plimportar);
             this.panelMenu.Controls.Add(this.btnImportar);
             this.panelMenu.Controls.Add(this.btnModalidad);
             this.panelMenu.Controls.Add(this.btnConvenio);
             this.panelMenu.Controls.Add(this.btnEmpresa);
             this.panelMenu.Controls.Add(this.btnAlumno);
-            this.panelMenu.Controls.Add(this.btnLogOut);
             this.panelMenu.Controls.Add(this.pictureBox1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(288, 814);
             this.panelMenu.TabIndex = 0;
+            // 
+            // plimportar
+            // 
+            this.plimportar.BackColor = System.Drawing.Color.DarkGray;
+            this.plimportar.Controls.Add(this.importEmpresa);
+            this.plimportar.Controls.Add(this.importAlumno);
+            this.plimportar.Location = new System.Drawing.Point(0, 372);
+            this.plimportar.Name = "plimportar";
+            this.plimportar.Size = new System.Drawing.Size(288, 69);
+            this.plimportar.TabIndex = 18;
             // 
             // btnLogOut
             // 
@@ -72,7 +84,7 @@
             this.btnLogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogOut.Image = global::SENATI_ETI_BETA_.Properties.Resources.logout__1___30px;
             this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnLogOut.Location = new System.Drawing.Point(12, 764);
+            this.btnLogOut.Location = new System.Drawing.Point(12, 50);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(125, 38);
             this.btnLogOut.TabIndex = 4;
@@ -100,16 +112,6 @@
             this.panelMuestra.Size = new System.Drawing.Size(1137, 814);
             this.panelMuestra.TabIndex = 1;
             // 
-            // plimportar
-            // 
-            this.plimportar.BackColor = System.Drawing.Color.DarkGray;
-            this.plimportar.Controls.Add(this.importEmpresa);
-            this.plimportar.Controls.Add(this.importAlumno);
-            this.plimportar.Location = new System.Drawing.Point(0, 372);
-            this.plimportar.Name = "plimportar";
-            this.plimportar.Size = new System.Drawing.Size(288, 69);
-            this.plimportar.TabIndex = 18;
-            // 
             // importEmpresa
             // 
             this.importEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(79)))), ((int)(((byte)(134)))));
@@ -128,6 +130,7 @@
             this.importEmpresa.Text = "Empresa";
             this.importEmpresa.TextColor = System.Drawing.Color.White;
             this.importEmpresa.UseVisualStyleBackColor = false;
+            this.importEmpresa.Click += new System.EventHandler(this.importEmpresa_Click);
             // 
             // importAlumno
             // 
@@ -248,6 +251,15 @@
             this.btnAlumno.UseVisualStyleBackColor = false;
             this.btnAlumno.Click += new System.EventHandler(this.btnAlumno_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnLogOut);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 714);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(288, 100);
+            this.panel1.TabIndex = 19;
+            // 
             // MENUespecialista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,14 +267,15 @@
             this.ClientSize = new System.Drawing.Size(1425, 814);
             this.Controls.Add(this.panelMuestra);
             this.Controls.Add(this.panelMenu);
-            this.MaximumSize = new System.Drawing.Size(1441, 853);
-            this.MinimumSize = new System.Drawing.Size(1441, 853);
             this.Name = "MENUespecialista";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.especialista_FormClosing);
             this.panelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.plimportar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -280,5 +293,6 @@
         private System.Windows.Forms.Panel plimportar;
         private RJButton importEmpresa;
         private RJButton importAlumno;
+        private System.Windows.Forms.Panel panel1;
     }
 }

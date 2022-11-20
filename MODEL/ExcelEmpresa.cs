@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace MODEL
 {
-    public class Excel
+    public class ExcelEmpresa
     {
         //private int ruc;
         //private string razon_social;

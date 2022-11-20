@@ -165,6 +165,7 @@
             this.MaximumSize = new System.Drawing.Size(1441, 853);
             this.MinimumSize = new System.Drawing.Size(1441, 853);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SENATI-ETI";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

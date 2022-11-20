@@ -60,6 +60,7 @@ namespace SENATI_ETI_BETA_.Tablas
                     cboHojas.Items.Add(tabla.TableName);
                 }
                 cboHojas.SelectedIndex = 0;
+                dgvDatos.DataSource = dtsTablas.Tables[cboHojas.SelectedIndex];
 
                 reader.Close();
 

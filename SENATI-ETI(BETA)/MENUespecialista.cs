@@ -100,5 +100,11 @@ namespace SENATI_ETI_BETA_
             ImportarAlumno imp = new ImportarAlumno();
             imp.Show();
         }
+
+        private void importEmpresa_Click(object sender, EventArgs e)
+        {
+            ImportarEmpresa impo = new ImportarEmpresa();
+            impo.Show();
+        }
     }
 }

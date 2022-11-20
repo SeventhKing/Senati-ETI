@@ -210,6 +210,12 @@
     <Compile Include="Tablas\ImportarAlumno.Designer.cs">
       <DependentUpon>ImportarAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tablas\ImportarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\ImportarEmpresa.Designer.cs">
+      <DependentUpon>ImportarEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tablas\tabla alumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tablas\ImportarAlumno.resx">
       <DependentUpon>ImportarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\ImportarEmpresa.resx">
+      <DependentUpon>ImportarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tablas\tabla alumno.resx">
       <DependentUpon>tabla alumno.cs</DependentUpon>

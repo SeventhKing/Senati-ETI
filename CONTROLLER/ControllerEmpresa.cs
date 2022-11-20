@@ -16,7 +16,7 @@ namespace CONTROLLER
 
         public static bool insertarempresa(DataTable dta)
         {
-            return MODEL.Excel.CargarDataEmpresa(dta);
+            return MODEL.ExcelEmpresa.CargarDataEmpresa(dta);
         }
     }
 }
