@@ -25,7 +25,7 @@ namespace SENATI_ETI_BETA_.Tablas
 
         private void btBuscar_Click(object sender, EventArgs e)
         {
-            dgvDatos.DataSource = null;
+            
             try
             {
                 //configuracion de ventana para seleccionar un archivo
@@ -35,6 +35,8 @@ namespace SENATI_ETI_BETA_.Tablas
 
                 if (oOpenFileDialog.ShowDialog() == DialogResult.OK)
                 {
+                    lblEstado.Text = "";
+                    dgvDatos.DataSource = null;
                     cboHojas.Items.Clear();
 
 
@@ -80,23 +82,30 @@ namespace SENATI_ETI_BETA_.Tablas
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-            dgvDatos.DataSource = dtsTablas.Tables[cboHojas.SelectedIndex];
+            try
+            {
+                dgvDatos.DataSource = dtsTablas.Tables[cboHojas.SelectedIndex];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnRegistrarData_Click(object sender, EventArgs e)
         {
-            DataTable data = (DataTable)(dgvDatos.DataSource);
-
-            resultado =ControllerEmpresa.insertarempresa(data);
-            if (resultado)
+            lblEstado.Visible= true;
+            lblEstado.Text = "Cargando...";
+            DataTable data = (DataTable)dgvDatos.DataSource;
+            resultado = ControllerEmpresa.insertarempresa(data);
+            
+            if (resultado==true)
             {
-                this.Close();
+                lblEstado.Text = "Completado";
             }
-            else
-            {
-                MessageBox.Show("Hubo un problema al registrar");
-            }
-
+            
+            
+            
         }
     }
 }

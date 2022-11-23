@@ -36,6 +36,7 @@
             this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.btBuscar = new System.Windows.Forms.Button();
             this.txtRuta = new System.Windows.Forms.TextBox();
+            this.lblEstado = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,11 +114,23 @@
             this.txtRuta.Size = new System.Drawing.Size(459, 20);
             this.txtRuta.TabIndex = 8;
             // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Location = new System.Drawing.Point(29, 523);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(157, 31);
+            this.lblEstado.TabIndex = 16;
+            this.lblEstado.Text = "Cargando...";
+            this.lblEstado.Visible = false;
+            // 
             // ImportarEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 563);
+            this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.btnRegistrarData);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.cboHojas);
@@ -144,5 +157,6 @@
         private System.Windows.Forms.DataGridView dgvDatos;
         private System.Windows.Forms.Button btBuscar;
         private System.Windows.Forms.TextBox txtRuta;
+        private System.Windows.Forms.Label lblEstado;
     }
 }

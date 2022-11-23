@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CONTROLLER
 {
@@ -16,7 +17,7 @@ namespace CONTROLLER
 
         public static bool insertarempresa(DataTable dta)
         {
-            return MODEL.ExcelEmpresa.CargarDataEmpresa(dta);
+            return MODEL.ModelExcelEmpresa.CargarDataEmpresa(dta);
         }
     }
 }

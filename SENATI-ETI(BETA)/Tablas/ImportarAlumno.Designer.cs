@@ -36,6 +36,7 @@
             this.cboHojas = new System.Windows.Forms.ComboBox();
             this.btnMostrar = new System.Windows.Forms.Button();
             this.btnRegistrarData = new System.Windows.Forms.Button();
+            this.lblEstado = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,19 +106,31 @@
             // 
             // btnRegistrarData
             // 
-            this.btnRegistrarData.Location = new System.Drawing.Point(533, 532);
+            this.btnRegistrarData.Location = new System.Drawing.Point(533, 526);
             this.btnRegistrarData.Name = "btnRegistrarData";
-            this.btnRegistrarData.Size = new System.Drawing.Size(169, 23);
+            this.btnRegistrarData.Size = new System.Drawing.Size(169, 31);
             this.btnRegistrarData.TabIndex = 7;
             this.btnRegistrarData.Text = "Registrar Data";
             this.btnRegistrarData.UseVisualStyleBackColor = true;
             this.btnRegistrarData.Click += new System.EventHandler(this.btnRegistrarData_Click);
             // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Location = new System.Drawing.Point(38, 526);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(157, 31);
+            this.lblEstado.TabIndex = 8;
+            this.lblEstado.Text = "Cargando...";
+            this.lblEstado.Visible = false;
+            // 
             // ImportarAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 567);
+            this.ClientSize = new System.Drawing.Size(716, 580);
+            this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.btnRegistrarData);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.cboHojas);
@@ -144,5 +157,6 @@
         private System.Windows.Forms.ComboBox cboHojas;
         private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.Button btnRegistrarData;
+        private System.Windows.Forms.Label lblEstado;
     }
 }

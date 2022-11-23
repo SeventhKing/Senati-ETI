@@ -24,22 +24,25 @@ namespace SENATI_ETI_BETA_.Tablas
 
         private void btBuscar_Click(object sender, EventArgs e)
         {
-            //configuracion de ventana para seleccionar un archivo
-            OpenFileDialog oOpenFileDialog = new OpenFileDialog();
-            //oOpenFileDialog.Filter = "Excel Worbook|*.xlsx";
-
-            if (oOpenFileDialog.ShowDialog() == DialogResult.OK)
+            try
             {
-                cboHojas.Items.Clear();
-                dgvDatos.DataSource = null;
+                //configuracion de ventana para seleccionar un archivo
+                OpenFileDialog oOpenFileDialog = new OpenFileDialog();
 
-                txtRuta.Text = oOpenFileDialog.FileName;
+                //oOpenFileDialog.Filter = "Excel Worbook|*.xlsx";
 
-                
-                try
+                if (oOpenFileDialog.ShowDialog() == DialogResult.OK)
                 {
+                    lblEstado.Text = "";
+                    dgvDatos.DataSource = null;
+                    cboHojas.Items.Clear();
+
+
+                    txtRuta.Text = oOpenFileDialog.FileName;
+
                     //FileStream nos permite leer, escribir, abrir y cerrar archivos en un sistema de archivos, como matrices de bytes
                     FileStream fsSource = new FileStream(oOpenFileDialog.FileName, FileMode.Open, FileAccess.Read);
+
 
                     //ExcelReaderFactory.CreateBinaryReader = formato XLS
                     //ExcelReaderFactory.CreateOpenXmlReader = formato XLSX
@@ -64,12 +67,13 @@ namespace SENATI_ETI_BETA_.Tablas
                     dgvDatos.DataSource = dtsTablas.Tables[cboHojas.SelectedIndex];
 
                     reader.Close();
+
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                    
-                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -88,19 +92,15 @@ namespace SENATI_ETI_BETA_.Tablas
 
         private void btnRegistrarData_Click(object sender, EventArgs e)
         {
-            DataTable data = (DataTable)(dgvDatos.DataSource);
-
+            lblEstado.Visible = true;
+            lblEstado.Text = "Cargando...";
+            DataTable data = (DataTable)dgvDatos.DataSource;
             resultado = ControllerEmpresa.insertarempresa(data);
-            if (resultado)
+
+            if (resultado == true)
             {
-                MessageBox.Show("Se registro la data");
-                
+                lblEstado.Text = "Completado";
             }
-            else
-            {
-                MessageBox.Show("Hubo un problema al registrar");
-            }
-            this.Close();
         }
     }
 }
