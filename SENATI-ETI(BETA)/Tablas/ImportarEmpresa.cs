@@ -70,17 +70,20 @@ namespace SENATI_ETI_BETA_.Tablas
                     MessageBox.Show(ex.Message);
                     
                 }
-                
-
-
-                
-
             }
         }
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-            dgvDatos.DataSource = dtsTablas.Tables[cboHojas.SelectedIndex];
+            try
+            {
+                dgvDatos.DataSource = dtsTablas.Tables[cboHojas.SelectedIndex];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         private void btnRegistrarData_Click(object sender, EventArgs e)
@@ -91,11 +94,13 @@ namespace SENATI_ETI_BETA_.Tablas
             if (resultado)
             {
                 MessageBox.Show("Se registro la data");
+                
             }
             else
             {
                 MessageBox.Show("Hubo un problema al registrar");
             }
+            this.Close();
         }
     }
 }

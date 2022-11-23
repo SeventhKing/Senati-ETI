@@ -25,46 +25,57 @@ namespace SENATI_ETI_BETA_.Tablas
 
         private void btBuscar_Click(object sender, EventArgs e)
         {
-            //configuracion de ventana para seleccionar un archivo
-            OpenFileDialog oOpenFileDialog = new OpenFileDialog();
-            //oOpenFileDialog.Filter = "Excel Worbook|*.xlsx";
-
-            if (oOpenFileDialog.ShowDialog() == DialogResult.OK)
+            dgvDatos.DataSource = null;
+            try
             {
-                cboHojas.Items.Clear();
-                dgvDatos.DataSource = null;
+                //configuracion de ventana para seleccionar un archivo
+                OpenFileDialog oOpenFileDialog = new OpenFileDialog();
 
-                txtRuta.Text = oOpenFileDialog.FileName;
+                //oOpenFileDialog.Filter = "Excel Worbook|*.xlsx";
 
-                //FileStream nos permite leer, escribir, abrir y cerrar archivos en un sistema de archivos, como matrices de bytes
-                FileStream fsSource = new FileStream(oOpenFileDialog.FileName, FileMode.Open, FileAccess.Read);
-
-
-                //ExcelReaderFactory.CreateBinaryReader = formato XLS
-                //ExcelReaderFactory.CreateOpenXmlReader = formato XLSX
-                //ExcelReaderFactory.CreateReader = XLS o XLSX
-                IExcelDataReader reader = ExcelReaderFactory.CreateReader(fsSource);
-
-                //convierte todas las hojas a un DataSet
-                dtsTablas = reader.AsDataSet(new ExcelDataSetConfiguration()
+                if (oOpenFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    ConfigureDataTable = (tableReader) => new ExcelDataTableConfiguration()
+                    cboHojas.Items.Clear();
+
+
+                    txtRuta.Text = oOpenFileDialog.FileName;
+
+                    //FileStream nos permite leer, escribir, abrir y cerrar archivos en un sistema de archivos, como matrices de bytes
+                    FileStream fsSource = new FileStream(oOpenFileDialog.FileName, FileMode.Open, FileAccess.Read);
+
+
+                    //ExcelReaderFactory.CreateBinaryReader = formato XLS
+                    //ExcelReaderFactory.CreateOpenXmlReader = formato XLSX
+                    //ExcelReaderFactory.CreateReader = XLS o XLSX
+                    IExcelDataReader reader = ExcelReaderFactory.CreateReader(fsSource);
+
+                    //convierte todas las hojas a un DataSet
+                    dtsTablas = reader.AsDataSet(new ExcelDataSetConfiguration()
                     {
-                        UseHeaderRow = true
+                        ConfigureDataTable = (tableReader) => new ExcelDataTableConfiguration()
+                        {
+                            UseHeaderRow = true
+                        }
+                    });
+
+                    //obtenemos las tablas y añadimos sus nombres en el desplegable de hojas
+                    foreach (DataTable tabla in dtsTablas.Tables)
+                    {
+                        cboHojas.Items.Add(tabla.TableName);
                     }
-                });
+                    cboHojas.SelectedIndex = 0;
+                    dgvDatos.DataSource = dtsTablas.Tables[cboHojas.SelectedIndex];
 
-                //obtenemos las tablas y añadimos sus nombres en el desplegable de hojas
-                foreach (DataTable tabla in dtsTablas.Tables)
-                {
-                    cboHojas.Items.Add(tabla.TableName);
+                    reader.Close();
+
                 }
-                cboHojas.SelectedIndex = 0;
-                dgvDatos.DataSource = dtsTablas.Tables[cboHojas.SelectedIndex];
-
-                reader.Close();
-
             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         private void btnMostrar_Click(object sender, EventArgs e)
@@ -79,7 +90,7 @@ namespace SENATI_ETI_BETA_.Tablas
             resultado =ControllerEmpresa.insertarempresa(data);
             if (resultado)
             {
-                MessageBox.Show("Se registro la data");
+                this.Close();
             }
             else
             {

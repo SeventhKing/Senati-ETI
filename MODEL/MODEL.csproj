@@ -158,6 +158,7 @@
     <Compile Include="ModelAlumno.cs" />
     <Compile Include="ModelConect.cs" />
     <Compile Include="ModelEmpresa.cs" />
+    <Compile Include="ModelValidarEmpresa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
