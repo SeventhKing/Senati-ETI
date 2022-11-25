@@ -53,8 +53,6 @@
             this.textBox11 = new SENATI_ETI_BETA_.textBox();
             this.textBox12 = new SENATI_ETI_BETA_.textBox();
             this.rjButton4 = new SENATI_ETI_BETA_.RJButton();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox13 = new SENATI_ETI_BETA_.textBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -461,45 +459,11 @@
             this.rjButton4.TextColor = System.Drawing.Color.White;
             this.rjButton4.UseVisualStyleBackColor = false;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(552, 29);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(44, 18);
-            this.label13.TabIndex = 30;
-            this.label13.Text = "RUC";
-            // 
-            // textBox13
-            // 
-            this.textBox13.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox13.BorderColor = System.Drawing.Color.Silver;
-            this.textBox13.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBox13.BorderRadius = 15;
-            this.textBox13.BorderSize = 2;
-            this.textBox13.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox13.Location = new System.Drawing.Point(687, 21);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox13.Multiline = false;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Padding = new System.Windows.Forms.Padding(9, 7, 9, 7);
-            this.textBox13.PasswordChar = false;
-            this.textBox13.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textBox13.PlaceholderText = "";
-            this.textBox13.Size = new System.Drawing.Size(222, 31);
-            this.textBox13.TabIndex = 29;
-            this.textBox13.Texts = "";
-            this.textBox13.UnderlinedStyle = false;
-            // 
             // CrearEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1005, 543);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox13);
             this.Controls.Add(this.rjButton4);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox11);
@@ -559,7 +523,5 @@
         private textBox textBox11;
         private textBox textBox12;
         private RJButton rjButton4;
-        private System.Windows.Forms.Label label13;
-        private textBox textBox13;
     }
 }
